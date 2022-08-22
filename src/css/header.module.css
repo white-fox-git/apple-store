@@ -1,14 +1,20 @@
+@import url('./setup.css');
+
 .header
 {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 92%;
     padding-top : 14px;
+    padding-left: 4%;
+    padding-right: 4%;
     padding-bottom: 14px;
     background-color: black;
     opacity: 99%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--Noto-Sans);
 }
 
 .logo
@@ -16,4 +22,76 @@
     width: 26px;
     height: 32px;
     padding: 0;
+}
+
+.menuBars, .userIcon
+{
+    color: rgb(223, 223, 223);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.sideMenu
+{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    opacity: 95%;
+    height: 100vh;
+    border-radius: 0px 20px 20px 0px;
+    animation-name: sideMenu;
+    animation-duration: 0.4s;
+    color: #4b4b4b;
+}
+
+.sideMenuTitle
+{
+    font-weight: 700;
+}
+
+.sideMenuHeader
+{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+}
+
+.closeSideMenu
+{
+    cursor: pointer;
+    font-size: 28px;
+}
+
+@keyframes sideMenu
+{
+    from
+    {
+        opacity: 0%;
+        left: -50%;
+    }
+
+    to
+    {
+        opacity: 99%;
+        left: 0;
+    }
+}
+
+@keyframes padeInUserMenu 
+{
+    from
+    {
+        opacity: 0%;
+        top: 0;
+    }
+
+    to
+    {
+        opacity: 99%;
+        top: 30px;
+    }  
 }

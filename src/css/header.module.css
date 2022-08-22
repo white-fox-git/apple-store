@@ -1,0 +1,19 @@
+.header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top : 14px;
+    padding-bottom: 14px;
+    background-color: black;
+    opacity: 99%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo
+{
+    width: 26px;
+    height: 32px;
+    padding: 0;
+}

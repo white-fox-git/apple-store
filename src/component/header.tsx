@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import style from '../css/header.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUser, faXmark, faBookmark, faBox, faGear, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate, Link } from 'react-router-dom';
 
 const Header = () => {
@@ -53,8 +53,11 @@ const Header = () => {
             <FontAwesomeIcon className={style.userIcon} icon={faUser} onClick={() => {userMenuStatus == true ? setUserMenuStatus(false) : setUserMenuStatus(true)}}/>
             {
                 userMenuStatus == true ?
-                <nav className={userMenuStatus == true ? style.padeInUserMenu : style.padeOutUserMenu}>
-                    
+                <nav className={style.userMenu}>
+                    <Link to="" className={style.userMenuItem}><FontAwesomeIcon icon={faBookmark} className={style.menuIcon}/>Saved Items</Link>
+                    <Link to="" className={style.userMenuItem}><FontAwesomeIcon icon={faBox} className={style.menuIcon}/>Orders</Link>
+                    <Link to="" className={style.userMenuItem}><FontAwesomeIcon icon={faGear} className={style.menuIcon}/>Account</Link>
+                    <Link to="" className={style.userMenuItem}><FontAwesomeIcon icon={faRightToBracket} className={style.menuIcon}/>Sign in</Link>
                 </nav>
                 :
                 null

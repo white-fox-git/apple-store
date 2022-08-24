@@ -15,6 +15,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: var(--Noto-Sans);
+    z-index: 500;
 }
 
 .logo
@@ -86,18 +87,27 @@
     transition: 0.3s;
 }
 
-.sideMenuItem:hover
+.menuItem
 {
-    color: #8881eb;
+    color: #bdbdbd;
+    font-weight: 200;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+    font-family: var(--Noto-Sans);
+    transition: 0.4s;
 }
 
-.padeInUserMenu
+.menuItem:hover{
+    color: white;
+}
+
+.userMenu
 {
     position: fixed;
     top: 70px;
     right: 2%;
-    width: 150px;
-    height: 200px;
+    padding: 5px;
     border-radius: 10px;
     border: 1px solid #dadada;
     background-color: #ffffff;
@@ -105,19 +115,25 @@
     animation-duration: 0.3s;
 }
 
-.menuItem
+
+.userMenuItem
 {
-    color: #bdbdbd;
-    font-weight: 200;
+    font-size: 16px;
+    display: block;
+    margin: 20px;
+    color: #4b4b4b;
     text-decoration: none;
-    display: none;
-    font-size: 14px;
-    font-family: var(--Noto-Sans);
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
-.menuItem:hover{
-    color: white;
+.menuIcon
+{
+    margin-right: 10px;
+}
+
+.sideMenuItem:hover, .userMenuItem:hover
+{
+    color: #8881eb;
 }
 
 @media screen and (min-width: 769px) {

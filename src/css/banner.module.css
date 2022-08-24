@@ -1,0 +1,114 @@
+.banner
+{
+    width: 100%;
+    height: 50vh;
+    background-image: url('../asset/Apple Item.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bannerColor
+{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: black;
+    opacity: 70%;
+}
+
+.bannerGradent
+{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.introBox
+{
+    position:absolute;
+    width: 50%;
+    top: 35%;
+    left: 0;
+    right: 0;
+    min-width: 450px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--Noto-Sans);
+}
+
+.mainText
+{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.subText
+{
+    margin-top: 10px;
+    color: rgb(192, 192, 192);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.bannerLine
+{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+}
+
+.introItem
+{
+    color: rgb(192, 192, 192);
+}
+
+.getProductBtn
+{
+    margin-top: 40px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 24px;
+    background: none;
+    border: 2px solid rgb(192, 192, 192);
+    color: rgb(192, 192, 192);
+    font-family: var(--Noto-Sans);
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.getProductBtn:hover
+{
+    border: 2px solid white;
+    color: white;
+}
+
+@media screen and (min-width: 769px) {
+    .banner
+    {
+        height: 100vh;
+    }
+
+    .mainText
+    {
+        font-size: 36px;
+    }
+
+    .subText
+    {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+
+    .introItem
+    {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}

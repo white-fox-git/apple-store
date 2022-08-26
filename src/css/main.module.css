@@ -1,0 +1,118 @@
+@import url('./setup.css');
+
+.main
+{
+    padding-top: 30px;
+    background-color: black;
+    padding-bottom: 30px;
+    color: var(--white);
+    font-family: var(--Noto-Sans);
+}
+
+.mainItem
+{
+    text-align: center;
+}
+
+.introMac
+{
+    margin-left: 20vw;
+    max-width: 1000px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.textBox
+{
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1000px;
+}
+
+.titleText
+{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.powerText
+{
+    font-size: 32px;
+    font-weight: 900;
+    background: linear-gradient(rgb(150, 150, 150), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.explanationText
+{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.M1Intro
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.M1Icon
+{
+    display: inline-block;
+    width: 20%;
+    max-width: 120px;
+}
+
+.M1IntroText
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(rgb(150, 150, 150), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 769px) {
+
+    .introMac
+    {
+        margin-left: 15vw;
+    }
+
+    .titleText
+    {
+        font-size: 32px;
+    }
+
+    .powerText
+    {
+        font-size: 36px;
+    }
+
+    .explanationText
+    {
+        font-size: 22px;
+    }
+
+    .M1Intro
+    {
+        flex-flow: row;
+    }
+
+    .M1IntroText
+    {
+        font-size: 26px;
+        margin-left: 10px;
+    }
+
+}

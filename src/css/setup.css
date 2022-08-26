@@ -3,4 +3,8 @@
 :root
 {
     --Noto-Sans: 'Noto Sans KR';
+    --gray: #c0c0c0;
+    --darkGray: #4b4b4b;
+    --black: #0e0e0e;
+    --white: #f7f7f7;
 }

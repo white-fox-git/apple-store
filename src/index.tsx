@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Routing from './Routing';
-import { Reset } from 'styled-reset';
+import { Reset } from 'styled-reset'; // reset.css 적용
 import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

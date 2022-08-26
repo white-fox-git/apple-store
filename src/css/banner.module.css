@@ -1,7 +1,7 @@
 .banner
 {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background-image: url('../asset/Apple Item.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     position: absolute;
     width:100%;
     height: 100%;
-    background-color: black;
+    background-color: var(--black);
     opacity: 70%;
 }
 
@@ -28,11 +28,11 @@
 .introBox
 {
     position:absolute;
-    width: 50%;
+    width: 80%;
     top: 35%;
     left: 0;
     right: 0;
-    min-width: 450px;
+    min-width: 350px;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
@@ -41,60 +41,56 @@
 
 .mainText
 {
-    color: white;
+    color: var(--white);
     font-size: 28px;
     font-weight: 700;
+    line-height: 1.5em;
 }
 
 .subText
 {
-    margin-top: 10px;
-    color: rgb(192, 192, 192);
-    font-size: 18px;
-    font-weight: 300;
+    margin-top: 16px;
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .bannerLine
 {
-    float: left;
+    margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 10px;
-    width: 100%;
+    width: 90%;
     display: block;
 }
 
 .introItem
 {
-    color: rgb(192, 192, 192);
+    color: var(--gray);
+    font-size: 14px;
 }
 
 .getProductBtn
 {
-    margin-top: 40px;
-    width: 250px;
+    margin-top: 5vh;
+    width: 200px;
     padding: 10px;
     border-radius: 24px;
     background: none;
-    border: 2px solid rgb(192, 192, 192);
-    color: rgb(192, 192, 192);
+    border: 2px solid var(--gray);
+    color: var(--gray);
     font-family: var(--Noto-Sans);
-    font-size: 20px;
+    font-size: 16px;
     transition: 0.3s;
     cursor: pointer;
 }
 
 .getProductBtn:hover
 {
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--white);
+    color: var(--white);
 }
 
 @media screen and (min-width: 769px) {
-    .banner
-    {
-        height: 100vh;
-    }
-
     .mainText
     {
         font-size: 36px;
@@ -110,5 +106,12 @@
     {
         margin-top: 10px;
         font-size: 20px;
+    }
+
+    .getProductBtn
+    {
+        width: 250px;
+        border-radius: 32px;
+        font-size: 24px;
     }
 }

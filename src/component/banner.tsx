@@ -1,16 +1,22 @@
+/** Banner Page */
+
 import style from '../css/banner.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+ 
+    let navigate = useNavigate();
+
     return(
         <div className={style.banner}>
             <div className={style.bannerColor} />
             <div className={style.bannerGradent} />
             <div className={style.introBox}>
-                <h4 className={style.mainText}>Apple 생활에 편리함을 더하다.</h4>
-                <p className={style.subText}>당신의 소중한 순간을 Apple과 함께하세요.</p>
+                <h4 className={style.mainText}>Apple, add convenience to your life.</h4>
+                <p className={style.subText}>With Apple in your precious moments.</p>
                 <hr className={style.bannerLine} /><br/><br/>
-                <p className={style.introItem}>iPhone / iPad / Mac / Watch</p>
-                <button className={style.getProductBtn}>상품 보러가기</button>
+                <p className={style.introItem}>iPhone / iPad / Mac / Watch / Airpods</p>
+                <button className={style.getProductBtn} onClick={() => {navigate('/')}}>Go to Product</button>
             </div>
         </div>
     )

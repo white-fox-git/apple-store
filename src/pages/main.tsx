@@ -3,6 +3,7 @@
 import style from '../css/main.module.css';
 import Header from '../component/header';
 import Banner from '../component/banner';
+import {Link} from 'react-router-dom';
 
 const Main = () => {
     return(
@@ -22,6 +23,11 @@ const Main = () => {
                     <div className={style.M1Intro}>
                         <img src="./M1_Icon.jpg" className={style.M1Icon} />
                         <h4 className={style.M1IntroText}>Supercharged by the Apple M1 chip</h4>
+                    </div>
+                    <div className={style.priceBox}>
+                        <span className={style.price}>From £999</span>
+                        <span className={style.price}>|</span>
+                        <Link to="" className={`${style.price} ${style.priceLink}`}>Wathc the product →</Link>
                     </div>
                 </section>
             </main>

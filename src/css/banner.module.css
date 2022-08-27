@@ -5,6 +5,7 @@
     background-image: url('../asset/Apple Item.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
 }
 
@@ -37,6 +38,8 @@
     margin: 0 auto;
     text-align: center;
     font-family: var(--Noto-Sans);
+    animation-name: IntroBox;
+    animation-duration: 1s;
 }
 
 .mainText
@@ -114,4 +117,17 @@
         border-radius: 32px;
         font-size: 24px;
     }
+}
+
+@keyframes IntroBox {
+    from {
+        opacity: 0%;
+        top: 60%;
+    }
+
+    to {
+        opacity: 100%;
+        top: 35%;
+    }
+    
 }

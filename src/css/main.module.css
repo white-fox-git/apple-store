@@ -12,6 +12,7 @@
 .mainItem
 {
     text-align: center;
+    overflow: hidden;
 }
 
 .introMac
@@ -20,6 +21,7 @@
     max-width: 1000px;
     width: 80%;
     margin-bottom: 30px;
+
 }
 
 .textBox
@@ -82,6 +84,36 @@
     -webkit-text-fill-color: transparent;
 }
 
+.priceBox
+{
+    padding: 20px;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 50px;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.price
+{
+    font-size: 18px;
+    text-decoration: none;
+    color : var(--white);
+    margin: 5px;
+    line-height: 1.5em;
+    transition: 0.8s;
+    font-weight: 700;
+}
+
+.priceLink:hover
+{
+    color: rgb(226, 219, 255)
+}
+
 @media screen and (min-width: 769px) {
 
     .introMac
@@ -113,6 +145,11 @@
     {
         font-size: 26px;
         margin-left: 10px;
+    }
+
+    .price
+    {
+        font-size: 24px;
     }
 
 }
